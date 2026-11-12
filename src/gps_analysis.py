@@ -1,0 +1,10 @@
+import pandas as pd
+df = pd.read_csv("data/gps_data.csv")
+print("GPS Data Loaded Successfully!")
+print("\nFirst 5 GPS Records:")
+print(df.head())
+print("\nMissing Values:")
+print(df.isnull().sum())
+print("\nTotal GPS Records:", len(df))
+print("Total Unique Devices:", df["DeviceID"].nunique())
+print("\nGPS Data Analysis Completed!")
