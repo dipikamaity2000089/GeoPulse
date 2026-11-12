@@ -1,0 +1,31 @@
+StoreID,StoreName,GPS_Pings_Within_500m,Unique_Devices_Within_500m
+S001,GeoMart Anna Nagar,1726,253
+S002,GeoMart T Nagar,1714,247
+S003,GeoMart Velachery,1785,252
+S004,GeoMart Adyar,0,0
+S005,GeoMart Mylapore,0,0
+S006,GeoMart Nungambakkam,0,0
+S007,GeoMart Guindy,0,0
+S008,GeoMart Tambaram,0,0
+S009,GeoMart Porur,0,0
+S010,GeoMart Ambattur,0,0
+S011,GeoMart Kodambakkam,0,0
+S012,GeoMart Saidapet,0,0
+S013,GeoMart Perungudi,0,0
+S014,GeoMart Thoraipakkam,5,5
+S015,GeoMart Sholinganallur,0,0
+S016,GeoMart Madipakkam,0,0
+S017,GeoMart Pallikaranai,0,0
+S018,GeoMart Chromepet,0,0
+S019,GeoMart Pallavaram,0,0
+S020,GeoMart Perambur,0,0
+S021,GeoMart Washermenpet,0,0
+S022,GeoMart Royapettah,0,0
+S023,GeoMart Triplicane,0,0
+S024,GeoMart Egmore,0,0
+S025,GeoMart Kilpauk,0,0
+S026,GeoMart Mogappair,0,0
+S027,GeoMart Thirumangalam,0,0
+S028,GeoMart Medavakkam,0,0
+S029,GeoMart Poonamallee,0,0
+S030,GeoMart Thiruvanmiyur,0,0
