@@ -1,0 +1,27 @@
+{
+  "project": "GeoPulse: Hyper-Local Retail Mobility Analytics",
+  "dataset_name": "GeoPulse Synthetic Multi-City Dataset",
+  "data_type": "synthetic",
+  "generated_on": "2026-11-12",
+  "random_seed": 20261112,
+  "cities": [
+    "Chennai",
+    "Mumbai",
+    "Bengaluru",
+    "London",
+    "Singapore"
+  ],
+  "time_range": {
+    "start": "2026-10-01",
+    "end": "2026-10-14"
+  },
+  "record_counts": {
+    "store_locations.csv": 50,
+    "competitor_locations.csv": 60,
+    "candidate_locations.csv": 25,
+    "footfall_observations.csv": 9800,
+    "mobility_flows.csv": 4200,
+    "mobility_zones.csv": 30
+  },
+  "disclaimer": "All stores, competitors, candidates, zones, visitor counts and mobility flows are simulated. Not real-world observations."
+}
