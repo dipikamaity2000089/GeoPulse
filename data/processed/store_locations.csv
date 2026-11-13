@@ -1,0 +1,51 @@
+store_id,store_name,city,country,store_category,latitude,longitude,catchment_radius_km,data_type
+ST001,Chennai Grocery Store 01,Chennai,India,Grocery,13.101431,80.250153,1.86,synthetic
+ST002,Chennai Cafe Store 02,Chennai,India,Cafe,13.101972,80.251297,1.82,synthetic
+ST003,Chennai Restaurant Store 03,Chennai,India,Restaurant,13.073729,80.278423,1.32,synthetic
+ST004,Chennai Pharmacy Store 04,Chennai,India,Pharmacy,13.073298,80.249971,2.0,synthetic
+ST005,Chennai Fashion Store 05,Chennai,India,Fashion,13.060287,80.265663,3.23,synthetic
+ST006,Chennai Electronics Store 06,Chennai,India,Electronics,13.062695,80.286507,1.43,synthetic
+ST007,Chennai Convenience Store 07,Chennai,India,Convenience,13.064314,80.249572,3.22,synthetic
+ST008,Chennai Grocery Store 08,Chennai,India,Grocery,13.077285,80.271797,3.16,synthetic
+ST009,Chennai Cafe Store 09,Chennai,India,Cafe,13.071676,80.262152,1.61,synthetic
+ST010,Chennai Restaurant Store 10,Chennai,India,Restaurant,13.074089,80.262905,3.21,synthetic
+ST011,Mumbai Grocery Store 01,Mumbai,India,Grocery,19.072516,72.881756,1.38,synthetic
+ST012,Mumbai Cafe Store 02,Mumbai,India,Cafe,19.065103,72.859584,2.75,synthetic
+ST013,Mumbai Restaurant Store 03,Mumbai,India,Restaurant,19.093691,72.855636,2.32,synthetic
+ST014,Mumbai Pharmacy Store 04,Mumbai,India,Pharmacy,19.056629,72.878593,3.36,synthetic
+ST015,Mumbai Fashion Store 05,Mumbai,India,Fashion,19.075633,72.868742,2.63,synthetic
+ST016,Mumbai Electronics Store 06,Mumbai,India,Electronics,19.083725,72.859884,3.17,synthetic
+ST017,Mumbai Convenience Store 07,Mumbai,India,Convenience,19.071873,72.900735,1.06,synthetic
+ST018,Mumbai Grocery Store 08,Mumbai,India,Grocery,19.057273,72.883575,1.5,synthetic
+ST019,Mumbai Cafe Store 09,Mumbai,India,Cafe,19.09467,72.868978,1.53,synthetic
+ST020,Mumbai Restaurant Store 10,Mumbai,India,Restaurant,19.055189,72.883493,1.03,synthetic
+ST021,Bengaluru Grocery Store 01,Bengaluru,India,Grocery,12.986298,77.587716,3.3,synthetic
+ST022,Bengaluru Cafe Store 02,Bengaluru,India,Cafe,12.954072,77.603567,2.14,synthetic
+ST023,Bengaluru Restaurant Store 03,Bengaluru,India,Restaurant,12.975585,77.574125,3.34,synthetic
+ST024,Bengaluru Pharmacy Store 04,Bengaluru,India,Pharmacy,12.982559,77.617228,3.31,synthetic
+ST025,Bengaluru Fashion Store 05,Bengaluru,India,Fashion,12.994939,77.60893,3.44,synthetic
+ST026,Bengaluru Electronics Store 06,Bengaluru,India,Electronics,12.986725,77.584532,1.66,synthetic
+ST027,Bengaluru Convenience Store 07,Bengaluru,India,Convenience,12.953728,77.573219,1.26,synthetic
+ST028,Bengaluru Grocery Store 08,Bengaluru,India,Grocery,12.95631,77.599411,1.75,synthetic
+ST029,Bengaluru Cafe Store 09,Bengaluru,India,Cafe,12.982013,77.615311,3.04,synthetic
+ST030,Bengaluru Restaurant Store 10,Bengaluru,India,Restaurant,12.962591,77.575176,3.06,synthetic
+ST031,London Grocery Store 01,London,United Kingdom,Grocery,51.528082,-0.161425,2.1,synthetic
+ST032,London Cafe Store 02,London,United Kingdom,Cafe,51.508188,-0.149456,1.12,synthetic
+ST033,London Restaurant Store 03,London,United Kingdom,Restaurant,51.500126,-0.16579,1.09,synthetic
+ST034,London Pharmacy Store 04,London,United Kingdom,Pharmacy,51.482859,-0.123585,2.05,synthetic
+ST035,London Fashion Store 05,London,United Kingdom,Fashion,51.491271,-0.128536,2.24,synthetic
+ST036,London Electronics Store 06,London,United Kingdom,Electronics,51.523389,-0.094862,2.41,synthetic
+ST037,London Convenience Store 07,London,United Kingdom,Convenience,51.517846,-0.12249,1.43,synthetic
+ST038,London Grocery Store 08,London,United Kingdom,Grocery,51.485522,-0.090427,2.37,synthetic
+ST039,London Cafe Store 09,London,United Kingdom,Cafe,51.48543,-0.121771,2.4,synthetic
+ST040,London Restaurant Store 10,London,United Kingdom,Restaurant,51.52254,-0.127671,3.49,synthetic
+ST041,Singapore Grocery Store 01,Singapore,Singapore,Grocery,1.343625,103.82618,2.41,synthetic
+ST042,Singapore Cafe Store 02,Singapore,Singapore,Cafe,1.352888,103.812538,1.24,synthetic
+ST043,Singapore Restaurant Store 03,Singapore,Singapore,Restaurant,1.340198,103.814035,3.26,synthetic
+ST044,Singapore Pharmacy Store 04,Singapore,Singapore,Pharmacy,1.360383,103.809448,2.78,synthetic
+ST045,Singapore Fashion Store 05,Singapore,Singapore,Fashion,1.375617,103.824408,2.26,synthetic
+ST046,Singapore Electronics Store 06,Singapore,Singapore,Electronics,1.348307,103.834373,3.43,synthetic
+ST047,Singapore Convenience Store 07,Singapore,Singapore,Convenience,1.372052,103.819169,2.56,synthetic
+ST048,Singapore Grocery Store 08,Singapore,Singapore,Grocery,1.340694,103.821665,3.02,synthetic
+ST049,Singapore Cafe Store 09,Singapore,Singapore,Cafe,1.353969,103.835378,1.57,synthetic
+ST050,Singapore Restaurant Store 10,Singapore,Singapore,Restaurant,1.332016,103.810575,2.61,synthetic
