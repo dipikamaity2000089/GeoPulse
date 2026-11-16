@@ -1,4 +1,4 @@
-import csv
+﻿import csv
 import json
 from pathlib import Path
 import pandas as pd
@@ -123,6 +123,56 @@ def convert_data_types(datasets):
 
     return datasets
 
+
+def clean_text_data(datasets):
+    text_columns = {
+        "store_locations.csv": [
+            "store_id", "store_name", "city",
+            "country", "store_category", "data_type"
+        ],
+        "competitor_locations.csv": [
+            "competitor_id", "competitor_name",
+            "city", "competitor_category", "data_type"
+        ],
+        "candidate_locations.csv": [
+            "candidate_id", "candidate_name",
+            "city", "proposed_store_category", "data_type"
+        ],
+        "footfall_observations.csv": [
+            "store_id", "city", "data_type"
+        ],
+        "mobility_flows.csv": [
+            "city", "origin_zone_id",
+            "destination_store_id", "data_type"
+        ],
+        "mobility_zones.csv": [
+            "zone_id", "zone_name", "city", "data_type"
+        ]
+    }
+
+    print("\n" + "=" * 55)
+    print("GEOPULSE TEXT CLEANING")
+    print("=" * 55)
+
+    for filename, columns in text_columns.items():
+        df = datasets[filename]
+
+        for column in columns:
+            df[column] = (
+                df[column]
+                .astype("string")
+                .str.strip()
+                .str.replace(r"\s+", " ", regex=True)
+            )
+
+        print(f"[OK] Cleaned text columns: {filename}")
+
+    print("Text cleaning completed successfully.")
+    print("=" * 55)
+
+    return datasets
+
+
 def validate_data(datasets):
     print("\n" + "=" * 55)
     print("GEOPULSE DATA VALIDATION")
@@ -207,6 +257,95 @@ def validate_data(datasets):
             if negative_count > 0:
                 validation_passed = False
 
+    print("\n" + "=" * 55)
+    print("REFERENTIAL INTEGRITY VALIDATION")
+    print("=" * 55)
+
+    stores = datasets["store_locations.csv"]
+    zones = datasets["mobility_zones.csv"]
+    footfall = datasets["footfall_observations.csv"]
+    flows = datasets["mobility_flows.csv"]
+
+    store_ids = set(stores["store_id"])
+    zone_ids = set(zones["zone_id"])
+
+    # Check 1: Footfall records reference existing stores
+    invalid_footfall_stores = int(
+        (~footfall["store_id"].isin(store_ids)).sum()
+    )
+
+    print(
+        f"Unmatched footfall store IDs: "
+        f"{invalid_footfall_stores}"
+    )
+
+    # Check 2: Mobility flows reference existing stores
+    invalid_flow_stores = int(
+        (~flows["destination_store_id"].isin(store_ids)).sum()
+    )
+
+    print(
+        f"Unmatched mobility destination store IDs: "
+        f"{invalid_flow_stores}"
+    )
+
+    # Check 3: Mobility flows reference existing zones
+    invalid_flow_zones = int(
+        (~flows["origin_zone_id"].isin(zone_ids)).sum()
+    )
+
+    print(
+        f"Unmatched mobility origin zone IDs: "
+        f"{invalid_flow_zones}"
+    )
+
+    # Check 4: Destination store city matches flow city
+    store_city_map = stores.set_index("store_id")["city"]
+
+    destination_cities = flows["destination_store_id"].map(
+        store_city_map
+    )
+
+    destination_city_mismatches = int(
+        (flows["city"] != destination_cities).sum()
+    )
+
+    print(
+        f"Destination store city mismatches: "
+        f"{destination_city_mismatches}"
+    )
+
+    # Check 5: Origin zone city matches flow city
+    zone_city_map = zones.set_index("zone_id")["city"]
+
+    origin_cities = flows["origin_zone_id"].map(zone_city_map)
+
+    origin_city_mismatches = int(
+        (flows["city"] != origin_cities).sum()
+    )
+
+    print(
+        f"Origin zone city mismatches: "
+        f"{origin_city_mismatches}"
+    )
+
+    relationship_errors = (
+        invalid_footfall_stores
+        + invalid_flow_stores
+        + invalid_flow_zones
+        + destination_city_mismatches
+        + origin_city_mismatches
+    )
+
+    if relationship_errors > 0:
+        validation_passed = False
+
+    print(
+        "Referential integrity:",
+        "PASSED" if relationship_errors == 0 else "FAILED"
+    )
+    print("=" * 55)
+
     print("\nOverall validation:",
           "PASSED" if validation_passed else "FAILED")
     print("=" * 55)
@@ -260,9 +399,10 @@ def main():
 
     try:
         datasets = convert_data_types(datasets)
+        datasets = clean_text_data(datasets)
 
     except (ValueError, TypeError) as error:
-        print(f"[ERROR] Data type conversion failed: {error}")
+        print(f"[ERROR] Data preparation failed: {error}")
         return
 
     if not validate_data(datasets):
