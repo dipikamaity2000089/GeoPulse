@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9b6116076dea2dd51b4ac4d1343002b4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+
+
+    <div style="
+        position: fixed;
+        bottom: 30px;
+        left: 30px;
+        width: 190px;
+        background-color: white;
+        border: 2px solid grey;
+        border-radius: 8px;
+        padding: 12px;
+        z-index: 9999;
+        font-size: 14px;
+    ">
+        <b>Footfall Intensity</b><br><br>
+        <span style="color:red;">●</span>
+        High: 60 or more<br>
+        <span style="color:orange;">●</span>
+        Medium: 30–59<br>
+        <span style="color:green;">●</span>
+        Low: below 30
+    </div>
+
+
+            <div class="folium-map" id="map_9b6116076dea2dd51b4ac4d1343002b4" ></div>
+
+</body>
+<script>
+
+
+            var map_9b6116076dea2dd51b4ac4d1343002b4 = L.map(
+                "map_9b6116076dea2dd51b4ac4d1343002b4",
+                {
+                    center: [51.5045253, -0.1286013],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+
+
+
+
+            var tile_layer_fefba3feecf260148375d80853840a37 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 16,
+  "maxNativeZoom": 16,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Esri, DeLorme, NAVTEQ",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+
+
+            tile_layer_fefba3feecf260148375d80853840a37.addTo(map_9b6116076dea2dd51b4ac4d1343002b4);
+
+
+            var heat_map_f43ac458116e9b274ca17b617e2fba17 = L.heatLayer(
+                [[51.528082, -0.161425, 73.43], [51.508188, -0.149456, 45.43], [51.500126, -0.16579, 53.71], [51.482859, -0.123585, 24.71], [51.491271, -0.128536, 40.93], [51.523389, -0.094862, 29.07], [51.517846, -0.12249, 38.21], [51.485522, -0.090427, 56.36], [51.48543, -0.121771, 39.07], [51.52254, -0.127671, 66.36]],
+                {
+  "minOpacity": 0.4,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+  "gradient": {
+  0.2: "blue",
+  0.4: "lime",
+  0.6: "yellow",
+  0.8: "orange",
+  1.0: "red",
+},
+}
+            );
+
+
+            heat_map_f43ac458116e9b274ca17b617e2fba17.addTo(map_9b6116076dea2dd51b4ac4d1343002b4);
+
+
+            var marker_f730b022ee0712c1fffd82c5879558de = L.marker(
+                [51.528082, -0.161425],
+                {
+}
+            ).addTo(map_9b6116076dea2dd51b4ac4d1343002b4);
+
+
+            var icon_a341e91b64b8ec6ac6bdfb95e34b9e4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+
+
+        var popup_da857792913ba6e4fde5a5a7380b4840 = L.popup({
+  "maxWidth": 250,
+});
+
+
+
+                var html_12b9dc07553ea07844d5a2bd2a12b616 = $(`<div id="html_12b9dc07553ea07844d5a2bd2a12b616" style="width: 100.0%; height: 100.0%;">         <b>Store ID:</b> ST031<br>         <b>City:</b> London<br>         <b>Hour:</b> 19:00<br>         <b>Average Visitors:</b> 73.43<br>         <b>Total Visitors (14 days):</b> 1028         </div>`)[0];
+                popup_da857792913ba6e4fde5a5a7380b4840.setContent(html_12b9dc07553ea07844d5a2bd2a12b616);
+
+
+
+        marker_f730b022ee0712c1fffd82c5879558de.bindPopup(popup_da857792913ba6e4fde5a5a7380b4840)
+        ;
+
+
+
+
+            marker_f730b022ee0712c1fffd82c5879558de.bindTooltip(
+                `<div>
+                     ST031
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+
+
+                marker_f730b022ee0712c1fffd82c5879558de.setIcon(icon_a341e91b64b8ec6ac6bdfb95e34b9e4d);
+
+
+            var marker_c4da96bb340a25e8ab86a3e85ecac5a3 = L.marker(
+                [51.508188, -0.149456],
+                {
+}
+            ).addTo(map_9b6116076dea2dd51b4ac4d1343002b4);
+
+
+            var icon_2421cd7b58fcd3c62e006f8d29c31caa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+
+
+        var popup_65708571efa8050ee7a80e80cebb7047 = L.popup({
+  "maxWidth": 250,
+});
+
+
+
+                var html_f163d9357315ee4e09b10c46b943edbf = $(`<div id="html_f163d9357315ee4e09b10c46b943edbf" style="width: 100.0%; height: 100.0%;">         <b>Store ID:</b> ST032<br>         <b>City:</b> London<br>         <b>Hour:</b> 19:00<br>         <b>Average Visitors:</b> 45.43<br>         <b>Total Visitors (14 days):</b> 636         </div>`)[0];
+                popup_65708571efa8050ee7a80e80cebb7047.setContent(html_f163d9357315ee4e09b10c46b943edbf);
+
+
+
+        marker_c4da96bb340a25e8ab86a3e85ecac5a3.bindPopup(popup_65708571efa8050ee7a80e80cebb7047)
+        ;
+
+
+
+
+            marker_c4da96bb340a25e8ab86a3e85ecac5a3.bindTooltip(
+                `<div>
+                     ST032
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+
+
+                marker_c4da96bb340a25e8ab86a3e85ecac5a3.setIcon(icon_2421cd7b58fcd3c62e006f8d29c31caa);
+
+
+            var marker_e942137e0d8cb7254f893a825086b38e = L.marker(
+                [51.500126, -0.16579],
+                {
+}
+            ).addTo(map_9b6116076dea2dd51b4ac4d1343002b4);
+
+
+            var icon_d08502ef867df0b3d350f17bef8109d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+
+
+        var popup_fe76d7aad2710fd94ab74fd46130ba6c = L.popup({
+  "maxWidth": 250,
+});
+
+
+
+                var html_1aed9aef29c2b3cfd7321b288ba1bd13 = $(`<div id="html_1aed9aef29c2b3cfd7321b288ba1bd13" style="width: 100.0%; height: 100.0%;">         <b>Store ID:</b> ST033<br>         <b>City:</b> London<br>         <b>Hour:</b> 19:00<br>         <b>Average Visitors:</b> 53.71<br>         <b>Total Visitors (14 days):</b> 752         </div>`)[0];
+                popup_fe76d7aad2710fd94ab74fd46130ba6c.setContent(html_1aed9aef29c2b3cfd7321b288ba1bd13);
+
+
+
+        marker_e942137e0d8cb7254f893a825086b38e.bindPopup(popup_fe76d7aad2710fd94ab74fd46130ba6c)
+        ;
+
+
+
+
+            marker_e942137e0d8cb7254f893a825086b38e.bindTooltip(
+                `<div>
+                     ST033
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+
+
+                marker_e942137e0d8cb7254f893a825086b38e.setIcon(icon_d08502ef867df0b3d350f17bef8109d9);
+
+
+            var marker_496346f7aa8f246c5c0120f537fea50f = L.marker(
+                [51.482859, -0.123585],
+                {
+}
+            ).addTo(map_9b6116076dea2dd51b4ac4d1343002b4);
+
+
+            var icon_296c2f19c33fab411be4d46022871ff8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+
+
+        var popup_69d986da10538826eb96c4cd5a98a77d = L.popup({
+  "maxWidth": 250,
+});
+
+
+
+                var html_c77685e23af31ee8691eb73acdeaa401 = $(`<div id="html_c77685e23af31ee8691eb73acdeaa401" style="width: 100.0%; height: 100.0%;">         <b>Store ID:</b> ST034<br>         <b>City:</b> London<br>         <b>Hour:</b> 19:00<br>         <b>Average Visitors:</b> 24.71<br>         <b>Total Visitors (14 days):</b> 346         </div>`)[0];
+                popup_69d986da10538826eb96c4cd5a98a77d.setContent(html_c77685e23af31ee8691eb73acdeaa401);
+
+
+
+        marker_496346f7aa8f246c5c0120f537fea50f.bindPopup(popup_69d986da10538826eb96c4cd5a98a77d)
+        ;
+
+
+
+
+            marker_496346f7aa8f246c5c0120f537fea50f.bindTooltip(
+                `<div>
+                     ST034
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+
+
+                marker_496346f7aa8f246c5c0120f537fea50f.setIcon(icon_296c2f19c33fab411be4d46022871ff8);
+
+
+            var marker_32bc4cacb0762d493d46849d7b3c971a = L.marker(
+                [51.491271, -0.128536],
+                {
+}
+            ).addTo(map_9b6116076dea2dd51b4ac4d1343002b4);
+
+
+            var icon_7a0b18ca3ae74a1f0d31f5ea1843b32b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+
+
+        var popup_f2e10a902408dd8863ff575425375ca4 = L.popup({
+  "maxWidth": 250,
+});
+
+
+
+                var html_b7d55bf2a78e996bdae37a246ac8ade4 = $(`<div id="html_b7d55bf2a78e996bdae37a246ac8ade4" style="width: 100.0%; height: 100.0%;">         <b>Store ID:</b> ST035<br>         <b>City:</b> London<br>         <b>Hour:</b> 19:00<br>         <b>Average Visitors:</b> 40.93<br>         <b>Total Visitors (14 days):</b> 573         </div>`)[0];
+                popup_f2e10a902408dd8863ff575425375ca4.setContent(html_b7d55bf2a78e996bdae37a246ac8ade4);
+
+
+
+        marker_32bc4cacb0762d493d46849d7b3c971a.bindPopup(popup_f2e10a902408dd8863ff575425375ca4)
+        ;
+
+
+
+
+            marker_32bc4cacb0762d493d46849d7b3c971a.bindTooltip(
+                `<div>
+                     ST035
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+
+
+                marker_32bc4cacb0762d493d46849d7b3c971a.setIcon(icon_7a0b18ca3ae74a1f0d31f5ea1843b32b);
+
+
+            var marker_7db03959c075a7bfa34dcb2f1a4b5dd3 = L.marker(
+                [51.523389, -0.094862],
+                {
+}
+            ).addTo(map_9b6116076dea2dd51b4ac4d1343002b4);
+
+
+            var icon_1c61149f8e661ee1a6904ffbf7eaba8a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+
+
+        var popup_3bc9c167c1d69150af0e2f23c4a20aaf = L.popup({
+  "maxWidth": 250,
+});
+
+
+
+                var html_055643a2eda030f2c7b78ffc9e2655ad = $(`<div id="html_055643a2eda030f2c7b78ffc9e2655ad" style="width: 100.0%; height: 100.0%;">         <b>Store ID:</b> ST036<br>         <b>City:</b> London<br>         <b>Hour:</b> 19:00<br>         <b>Average Visitors:</b> 29.07<br>         <b>Total Visitors (14 days):</b> 407         </div>`)[0];
+                popup_3bc9c167c1d69150af0e2f23c4a20aaf.setContent(html_055643a2eda030f2c7b78ffc9e2655ad);
+
+
+
+        marker_7db03959c075a7bfa34dcb2f1a4b5dd3.bindPopup(popup_3bc9c167c1d69150af0e2f23c4a20aaf)
+        ;
+
+
+
+
+            marker_7db03959c075a7bfa34dcb2f1a4b5dd3.bindTooltip(
+                `<div>
+                     ST036
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+
+
+                marker_7db03959c075a7bfa34dcb2f1a4b5dd3.setIcon(icon_1c61149f8e661ee1a6904ffbf7eaba8a);
+
+
+            var marker_59e2fd2903990a1d88d34cf16082be44 = L.marker(
+                [51.517846, -0.12249],
+                {
+}
+            ).addTo(map_9b6116076dea2dd51b4ac4d1343002b4);
+
+
+            var icon_0c9214916a3fa8175aef873e2acae8c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+
+
+        var popup_c71821795b140fbc7a41bff3da192cc9 = L.popup({
+  "maxWidth": 250,
+});
+
+
+
+                var html_f8ccc03bc0da63d69137938d6f4ef306 = $(`<div id="html_f8ccc03bc0da63d69137938d6f4ef306" style="width: 100.0%; height: 100.0%;">         <b>Store ID:</b> ST037<br>         <b>City:</b> London<br>         <b>Hour:</b> 19:00<br>         <b>Average Visitors:</b> 38.21<br>         <b>Total Visitors (14 days):</b> 535         </div>`)[0];
+                popup_c71821795b140fbc7a41bff3da192cc9.setContent(html_f8ccc03bc0da63d69137938d6f4ef306);
+
+
+
+        marker_59e2fd2903990a1d88d34cf16082be44.bindPopup(popup_c71821795b140fbc7a41bff3da192cc9)
+        ;
+
+
+
+
+            marker_59e2fd2903990a1d88d34cf16082be44.bindTooltip(
+                `<div>
+                     ST037
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+
+
+                marker_59e2fd2903990a1d88d34cf16082be44.setIcon(icon_0c9214916a3fa8175aef873e2acae8c6);
+
+
+            var marker_045dd756c36dd9e75bf55384fe22948c = L.marker(
+                [51.485522, -0.090427],
+                {
+}
+            ).addTo(map_9b6116076dea2dd51b4ac4d1343002b4);
+
+
+            var icon_b1dafa97dc996829cb66ce1bb9d22f6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+
+
+        var popup_07e6fedf2ba0850c7d18bd958a13ef74 = L.popup({
+  "maxWidth": 250,
+});
+
+
+
+                var html_4e64eee7583e6482c9afa44b0426eb4f = $(`<div id="html_4e64eee7583e6482c9afa44b0426eb4f" style="width: 100.0%; height: 100.0%;">         <b>Store ID:</b> ST038<br>         <b>City:</b> London<br>         <b>Hour:</b> 19:00<br>         <b>Average Visitors:</b> 56.36<br>         <b>Total Visitors (14 days):</b> 789         </div>`)[0];
+                popup_07e6fedf2ba0850c7d18bd958a13ef74.setContent(html_4e64eee7583e6482c9afa44b0426eb4f);
+
+
+
+        marker_045dd756c36dd9e75bf55384fe22948c.bindPopup(popup_07e6fedf2ba0850c7d18bd958a13ef74)
+        ;
+
+
+
+
+            marker_045dd756c36dd9e75bf55384fe22948c.bindTooltip(
+                `<div>
+                     ST038
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+
+
+                marker_045dd756c36dd9e75bf55384fe22948c.setIcon(icon_b1dafa97dc996829cb66ce1bb9d22f6b);
+
+
+            var marker_8527637554b7d5c649eb4b5b10384698 = L.marker(
+                [51.48543, -0.121771],
+                {
+}
+            ).addTo(map_9b6116076dea2dd51b4ac4d1343002b4);
+
+
+            var icon_ee90230d6938da2d9e7165ee5c7a7493 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+
+
+        var popup_a4546ab585bf8aff878eb0b06a4cc0e4 = L.popup({
+  "maxWidth": 250,
+});
+
+
+
+                var html_b289447e76db1b5fa6f51be585eee108 = $(`<div id="html_b289447e76db1b5fa6f51be585eee108" style="width: 100.0%; height: 100.0%;">         <b>Store ID:</b> ST039<br>         <b>City:</b> London<br>         <b>Hour:</b> 19:00<br>         <b>Average Visitors:</b> 39.07<br>         <b>Total Visitors (14 days):</b> 547         </div>`)[0];
+                popup_a4546ab585bf8aff878eb0b06a4cc0e4.setContent(html_b289447e76db1b5fa6f51be585eee108);
+
+
+
+        marker_8527637554b7d5c649eb4b5b10384698.bindPopup(popup_a4546ab585bf8aff878eb0b06a4cc0e4)
+        ;
+
+
+
+
+            marker_8527637554b7d5c649eb4b5b10384698.bindTooltip(
+                `<div>
+                     ST039
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+
+
+                marker_8527637554b7d5c649eb4b5b10384698.setIcon(icon_ee90230d6938da2d9e7165ee5c7a7493);
+
+
+            var marker_289fb23dd9c05adc7cf6f20610e16815 = L.marker(
+                [51.52254, -0.127671],
+                {
+}
+            ).addTo(map_9b6116076dea2dd51b4ac4d1343002b4);
+
+
+            var icon_11c08e8b54319d565614ea3bd51819e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+
+
+        var popup_7fa8e386f0cb46e2006779ec85163c8a = L.popup({
+  "maxWidth": 250,
+});
+
+
+
+                var html_dba2a9f8ed0c5d062591bf184b38dd51 = $(`<div id="html_dba2a9f8ed0c5d062591bf184b38dd51" style="width: 100.0%; height: 100.0%;">         <b>Store ID:</b> ST040<br>         <b>City:</b> London<br>         <b>Hour:</b> 19:00<br>         <b>Average Visitors:</b> 66.36<br>         <b>Total Visitors (14 days):</b> 929         </div>`)[0];
+                popup_7fa8e386f0cb46e2006779ec85163c8a.setContent(html_dba2a9f8ed0c5d062591bf184b38dd51);
+
+
+
+        marker_289fb23dd9c05adc7cf6f20610e16815.bindPopup(popup_7fa8e386f0cb46e2006779ec85163c8a)
+        ;
+
+
+
+
+            marker_289fb23dd9c05adc7cf6f20610e16815.bindTooltip(
+                `<div>
+                     ST040
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+
+
+                marker_289fb23dd9c05adc7cf6f20610e16815.setIcon(icon_11c08e8b54319d565614ea3bd51819e8);
+
+</script>
+</html>
