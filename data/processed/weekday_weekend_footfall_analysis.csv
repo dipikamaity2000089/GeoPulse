@@ -1,0 +1,11 @@
+city,day_type,average_daily_visitors,average_hourly_visitors,observed_days
+Bengaluru,Weekday,3558.7,254.19,10
+Bengaluru,Weekend,4411.25,315.09,4
+Chennai,Weekday,3933.7,280.98,10
+Chennai,Weekend,4725.0,337.5,4
+London,Weekday,3809.8,272.13,10
+London,Weekend,4724.5,337.46,4
+Mumbai,Weekday,4057.3,289.81,10
+Mumbai,Weekend,4897.5,349.82,4
+Singapore,Weekday,3958.0,282.71,10
+Singapore,Weekend,4878.0,348.43,4
