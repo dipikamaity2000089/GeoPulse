@@ -1,0 +1,26 @@
+candidate_id,candidate_name,city,proposed_store_category,catchment_radius_km,nearest_competitor,nearest_competitor_category,nearest_competitor_distance_km,competitors_within_catchment,same_category_competitors,total_competitors_in_city
+CA020,London Candidate Site 05,London,Fashion,2.5,London Competitor 04,Electronics,0.222,3,1,12
+CA008,Mumbai Candidate Site 03,Mumbai,Restaurant,2.05,Mumbai Competitor 01,Fashion,0.411,2,0,12
+CA010,Mumbai Candidate Site 05,Mumbai,Fashion,1.96,Mumbai Competitor 02,Fashion,0.522,2,2,12
+CA006,Mumbai Candidate Site 01,Mumbai,Grocery,2.79,Mumbai Competitor 07,Convenience,0.564,3,0,12
+CA024,Singapore Candidate Site 04,Singapore,Pharmacy,1.96,Singapore Competitor 12,Restaurant,0.604,3,0,12
+CA025,Singapore Candidate Site 05,Singapore,Fashion,2.08,Singapore Competitor 02,Fashion,0.67,1,1,12
+CA001,Chennai Candidate Site 01,Chennai,Grocery,1.54,Chennai Competitor 02,Pharmacy,0.744,2,0,12
+CA013,Bengaluru Candidate Site 03,Bengaluru,Restaurant,2.95,Bengaluru Competitor 07,Electronics,0.773,8,0,12
+CA014,Bengaluru Candidate Site 04,Bengaluru,Pharmacy,1.33,Bengaluru Competitor 02,Convenience,0.79,3,0,12
+CA007,Mumbai Candidate Site 02,Mumbai,Cafe,1.65,Mumbai Competitor 01,Fashion,0.795,2,0,12
+CA015,Bengaluru Candidate Site 05,Bengaluru,Fashion,2.97,Bengaluru Competitor 03,Cafe,0.797,5,0,12
+CA023,Singapore Candidate Site 03,Singapore,Restaurant,1.15,Singapore Competitor 02,Fashion,1.078,1,0,12
+CA019,London Candidate Site 04,London,Pharmacy,2.65,London Competitor 06,Electronics,1.143,5,1,12
+CA004,Chennai Candidate Site 04,Chennai,Pharmacy,2.02,Chennai Competitor 04,Convenience,1.172,3,1,12
+CA016,London Candidate Site 01,London,Grocery,2.33,London Competitor 01,Restaurant,1.224,2,1,12
+CA021,Singapore Candidate Site 01,Singapore,Grocery,1.17,Singapore Competitor 06,Fashion,1.237,0,0,12
+CA012,Bengaluru Candidate Site 02,Bengaluru,Cafe,1.48,Bengaluru Competitor 01,Electronics,1.29,3,1,12
+CA018,London Candidate Site 03,London,Restaurant,2.34,London Competitor 07,Restaurant,1.335,4,1,12
+CA011,Bengaluru Candidate Site 01,Bengaluru,Grocery,1.94,Bengaluru Competitor 08,Electronics,1.505,2,0,12
+CA003,Chennai Candidate Site 03,Chennai,Restaurant,2.91,Chennai Competitor 08,Convenience,1.584,5,2,12
+CA002,Chennai Candidate Site 02,Chennai,Cafe,1.25,Chennai Competitor 04,Convenience,1.758,0,0,12
+CA009,Mumbai Candidate Site 04,Mumbai,Pharmacy,1.31,Mumbai Competitor 10,Grocery,1.991,0,0,12
+CA005,Chennai Candidate Site 05,Chennai,Fashion,1.1,Chennai Competitor 12,Convenience,2.028,0,0,12
+CA022,Singapore Candidate Site 02,Singapore,Cafe,1.08,Singapore Competitor 02,Fashion,2.362,0,0,12
+CA017,London Candidate Site 02,London,Cafe,1.16,London Competitor 01,Restaurant,2.448,0,0,12
