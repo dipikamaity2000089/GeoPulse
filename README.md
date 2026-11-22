@@ -1,59 +1,35 @@
-# GeoPulse – Retail Location Intelligence Platform
+# GeoPulse | Retail Mobility Analytics
 
-**Analyze Footfall. Understand Mobility. Discover Better Retail Locations.**
+> Turning location data into smarter retail decisions.
 
-## Overview
-GeoPulse is a retail analytics platform that uses GPS-based mobility data to analyze store footfall, customer movement patterns, and geographic catchment areas. It helps businesses make informed retail location decisions through data-driven insights.
+## About
+GeoPulse is a retail location intelligence project that explores footfall patterns, visitor mobility, store proximity, and competitive landscapes using synthetic GPS data. It combines data analytics and geospatial techniques to uncover retail insights and evaluate location potential.
 
-## Key Features
+## Core Analytics
+- **Footfall Intelligence** — Store visits, hourly trends, and weekday/weekend patterns.
+- **Mobility Analysis** — Visitor transitions, journey sequences, and repeat visits.
+- **Spatial Intelligence** — Store density, geographic distances, and competitor proximity.
+- **Cannibalization Analysis** — Visitor overlap between nearby stores.
+- **Location Scoring** — Weighted ranking of stores using multiple business indicators.
+- **Data Quality** — Dataset integrity, consistency, and validation checks.
 
-**Implemented**
-- Synthetic GPS data generation.
-- Store catchment analysis using a 500-meter radius.
-- Hourly footfall and visitor analysis.
-- Interactive React dashboard with KPIs, charts, and store filters.
+## Tech Stack
+`Python` · `Pandas` · `NumPy` · `React` · `Vite` · `Recharts`
 
-**Planned**
-- Smart 2D and 3D Footfall Heatmap.
-- Store Cannibalization Detection.
-- Time-Based Mobility Analysis.
-- AI-Free Smart Store Recommendation.
-- Competitor Proximity Analysis.
-- What-If Location Simulator.
+## Synthetic Dataset
+| Metric | Scale |
+|---|---:|
+| Devices | 5,000 |
+| Stores | 100 |
+| Competitors | 60 |
+| Simulation period | 90 days |
+| Store visits | 73,662 |
+| GPS pings | 826,842 |
 
-## Technology Stack
+## Location Scoring
+Store performance is evaluated using footfall, competitor exposure, store density, mobility, and accessibility through a weighted scoring model.
 
-- **Languages:** Python, JavaScript
-- **Data Processing:** Pandas, NumPy
-- **Frontend:** React.js, Vite
-- **Visualization:** Recharts
-- **CSV Parsing:** PapaParse
-- **Icons:** Lucide React
-- **Tools:** VS Code, Git, GitHub
-
-## Project Structure
-
-```text
-GeoPulse/
-├── data/
-├── src/
-├── notebooks/
-├── dashboard/
-├── frontend/
-│   ├── public/data/
-│   └── src/
-├── .gitignore
-└── README.md
-```
-
-
-## Dataset
-
-The project currently uses synthetic GPS data, including device locations, store coordinates, distance calculations, catchment summaries, and hourly footfall records.
-
-
-
-## Objective
-
-To support smarter retail expansion by transforming location and mobility data into meaningful business insights.
-
+## Roadmap
+- Interactive 2D/3D footfall visualization
+- Mobility pattern dashboards
+- Location simulation and what-if analysis
