@@ -1,0 +1,4 @@
+StoreID,StoreName,Footfall,Nearby_Competitors,Cannibalization_Risk,Footfall_Score,Competition_Score,Cannibalization_Score,Opportunity_Score,Opportunity_Level,Smart_Recommendation
+S001,Store A,20,0,0.0,100.0,100.0,100.0,100.0,High Opportunity,High potential location. Consider opening a new retail store.
+S002,Store B,0,0,0.0,0.0,100.0,100.0,50.0,Medium Opportunity,Moderate opportunity. Collect more customer movement data before making a decision.
+S003,Store C,0,0,0.0,0.0,100.0,100.0,50.0,Medium Opportunity,Moderate opportunity. Collect more customer movement data before making a decision.
