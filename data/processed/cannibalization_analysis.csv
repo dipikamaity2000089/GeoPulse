@@ -1,0 +1,26 @@
+candidate_id,candidate_name,city,store_category,candidate_catchment_radius_km,existing_same_category_stores,overlapping_store_count,overlap_area_km2,overlap_percentage,cannibalization_risk,overlapping_stores
+CA009,Mumbai Candidate Site 04,Mumbai,Pharmacy,1.31,1,1,5.391,100.0,Very High,ST014
+CA018,London Candidate Site 03,London,Restaurant,2.34,2,1,17.202,100.0,Very High,ST040
+CA023,Singapore Candidate Site 03,Singapore,Restaurant,1.15,2,2,5.36,100.0,Very High,ST043; ST050
+CA015,Bengaluru Candidate Site 05,Bengaluru,Fashion,2.97,1,1,25.76,92.96,Very High,ST025
+CA013,Bengaluru Candidate Site 03,Bengaluru,Restaurant,2.95,2,2,25.286,92.49,Very High,ST023; ST030
+CA003,Chennai Candidate Site 03,Chennai,Restaurant,2.91,2,2,22.808,85.73,Very High,ST003; ST010
+CA011,Bengaluru Candidate Site 01,Bengaluru,Grocery,1.94,2,1,9.5,80.34,Very High,ST021
+CA022,Singapore Candidate Site 02,Singapore,Cafe,1.08,2,1,1.927,52.6,Very High,ST049
+CA002,Chennai Candidate Site 02,Chennai,Cafe,1.25,2,1,2.535,51.64,Very High,ST009
+CA004,Chennai Candidate Site 04,Chennai,Pharmacy,2.02,1,1,6.018,46.95,High,ST004
+CA024,Singapore Candidate Site 04,Singapore,Pharmacy,1.96,1,1,5.657,46.87,High,ST044
+CA001,Chennai Candidate Site 01,Chennai,Grocery,1.54,2,1,3.252,43.65,High,ST008
+CA019,London Candidate Site 04,London,Pharmacy,2.65,1,1,9.2,41.7,High,ST034
+CA016,London Candidate Site 01,London,Grocery,2.33,2,1,6.752,39.59,High,ST031
+CA010,Mumbai Candidate Site 05,Mumbai,Fashion,1.96,1,1,4.681,38.78,High,ST015
+CA020,London Candidate Site 05,London,Fashion,2.5,1,1,6.065,30.89,High,ST035
+CA025,Singapore Candidate Site 05,Singapore,Fashion,2.08,1,1,2.351,17.3,Moderate,ST045
+CA017,London Candidate Site 02,London,Cafe,1.16,2,2,0.67,15.85,Moderate,ST032; ST039
+CA005,Chennai Candidate Site 05,Chennai,Fashion,1.1,1,1,0.456,11.99,Moderate,ST005
+CA012,Bengaluru Candidate Site 02,Bengaluru,Cafe,1.48,2,1,0.783,11.38,Moderate,ST029
+CA021,Singapore Candidate Site 01,Singapore,Grocery,1.17,2,1,0.185,4.3,Moderate,ST048
+CA008,Mumbai Candidate Site 03,Mumbai,Restaurant,2.05,2,0,0.0,0.0,Low,No overlapping stores
+CA007,Mumbai Candidate Site 02,Mumbai,Cafe,1.65,2,0,0.0,0.0,Low,No overlapping stores
+CA006,Mumbai Candidate Site 01,Mumbai,Grocery,2.79,2,0,0.0,0.0,Low,No overlapping stores
+CA014,Bengaluru Candidate Site 04,Bengaluru,Pharmacy,1.33,1,0,0.0,0.0,Low,No overlapping stores
