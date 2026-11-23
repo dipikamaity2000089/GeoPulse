@@ -1,0 +1,101 @@
+Store_ID,Store_Name,Store_Category,District,Latitude,Longitude,Store_Area_SqFt,Estimated_Capacity,Opening_Hour,Closing_Hour,Parking_Available,Nearby_Transit_Access,Popularity_Score,Store_Status
+ST001,Fashion_001,Fashion,Central,13.08674,80.239591,10644,209,10:00,20:00,False,True,1.85,Active
+ST002,Supermarket_002,Supermarket,North,13.039677,80.260428,3239,72,10:00,23:00,True,False,1.93,Active
+ST003,Sports&Lifestyle_003,Sports & Lifestyle,West,13.092849,80.22052,11963,241,08:00,21:00,False,True,1.18,Active
+ST004,Fashion_004,Fashion,Suburban North,13.028704,80.2878,41065,1198,09:00,20:00,False,True,0.59,Active
+ST005,Pharmacy_005,Pharmacy,West,13.094646,80.269482,25200,557,08:00,21:00,False,True,1.91,Active
+ST006,Grocery_006,Grocery,North,13.054211,80.256273,25409,827,10:00,22:00,True,True,1.21,Active
+ST007,Pharmacy_007,Pharmacy,East,13.034706,80.250356,43443,885,09:00,20:00,True,True,0.94,Active
+ST008,Home&Living_008,Home & Living,Suburban North,13.044097,80.236879,38670,694,10:00,23:00,False,False,1.13,Active
+ST009,Electronics_009,Electronics,West,13.032567,80.279599,36822,1076,10:00,23:00,False,True,1.67,Active
+ST010,Electronics_010,Electronics,Commercial District,13.064416,80.280463,8685,286,10:00,23:00,True,False,0.82,Active
+ST011,ConvenienceStore_011,Convenience Store,Residential Zone,13.109651,80.262329,37756,684,10:00,20:00,False,False,0.52,Active
+ST012,Fashion_012,Fashion,West,13.059129,80.256298,48823,877,10:00,21:00,True,False,1.03,Active
+ST013,Pharmacy_013,Pharmacy,Residential Zone,13.037902,80.249913,12087,275,10:00,20:00,False,False,2.06,Active
+ST014,Supermarket_014,Supermarket,North,13.103619,80.290298,21653,648,10:00,20:00,True,False,0.98,Active
+ST015,Fashion_015,Fashion,Commercial District,13.088925,80.230271,32648,561,10:00,23:00,True,True,0.83,Active
+ST016,ShoppingMall_016,Shopping Mall,Suburban North,13.109563,80.27199,30211,534,08:00,21:00,True,False,1.4,Active
+ST017,Supermarket_017,Supermarket,Residential Zone,13.069853,80.267075,1971,71,08:00,20:00,True,False,1.76,Active
+ST018,Fashion_018,Fashion,Commercial District,13.04142,80.273518,15540,354,10:00,23:00,True,False,1.95,Active
+ST019,ConvenienceStore_019,Convenience Store,East,13.028489,80.272719,24719,620,10:00,20:00,True,True,1.43,Active
+ST020,ConvenienceStore_020,Convenience Store,Urban Core,13.092053,80.228742,14056,444,09:00,21:00,False,False,1.4,Active
+ST021,Grocery_021,Grocery,North,13.059882,80.288908,37566,1321,10:00,20:00,True,True,1.8,Active
+ST022,Electronics_022,Electronics,Suburban North,13.063708,80.2371,27782,490,08:00,23:00,False,False,0.83,Active
+ST023,ShoppingMall_023,Shopping Mall,Suburban North,13.082693,80.27844,37922,787,08:00,22:00,True,True,1.47,Active
+ST024,Sports&Lifestyle_024,Sports & Lifestyle,Commercial District,13.025486,80.245088,4786,105,10:00,21:00,True,True,1.51,Active
+ST025,Electronics_025,Electronics,North,13.073553,80.274017,16914,432,10:00,21:00,True,True,2.38,Active
+ST026,ConvenienceStore_026,Convenience Store,Transit Zone,13.072531,80.261823,18589,578,08:00,22:00,False,True,1.93,Active
+ST027,ShoppingMall_027,Shopping Mall,Suburban South,13.048456,80.280149,6254,246,10:00,20:00,True,True,1.74,Active
+ST028,Pharmacy_028,Pharmacy,West,13.031921,80.247921,6008,107,08:00,23:00,False,True,1.24,Active
+ST029,Pharmacy_029,Pharmacy,West,13.103858,80.228287,10300,300,10:00,21:00,False,False,2.28,Active
+ST030,Sports&Lifestyle_030,Sports & Lifestyle,East,13.084585,80.236288,43065,785,09:00,20:00,True,False,1.51,Active
+ST031,ShoppingMall_031,Shopping Mall,Central,13.020319,80.28169,43253,729,09:00,23:00,True,True,0.82,Active
+ST032,Fashion_032,Fashion,South,13.069103,80.286768,39675,894,08:00,22:00,False,True,1.36,Active
+ST033,Home&Living_033,Home & Living,East,13.081386,80.273355,24678,471,09:00,21:00,True,True,2.27,Active
+ST034,Electronics_034,Electronics,Suburban North,13.022231,80.278925,23270,444,10:00,21:00,False,True,1.32,Active
+ST035,Fashion_035,Fashion,Suburban North,13.098495,80.288687,16077,502,09:00,22:00,True,True,2.34,Active
+ST036,Supermarket_036,Supermarket,Transit Zone,13.037382,80.246261,6049,102,10:00,23:00,False,True,1.06,Active
+ST037,Fashion_037,Fashion,West,13.036071,80.297003,18897,717,09:00,22:00,False,True,1.69,Active
+ST038,ConvenienceStore_038,Convenience Store,Residential Zone,13.037107,80.223551,30077,1200,10:00,21:00,False,False,2.35,Active
+ST039,Fashion_039,Fashion,Transit Zone,13.102869,80.269852,44975,822,09:00,22:00,False,False,1.94,Active
+ST040,ConvenienceStore_040,Convenience Store,West,13.069897,80.235347,45076,778,08:00,22:00,False,True,1.85,Active
+ST041,ShoppingMall_041,Shopping Mall,West,13.038916,80.282861,41258,861,09:00,21:00,False,True,1.43,Active
+ST042,Fashion_042,Fashion,West,13.066391,80.270635,23466,830,08:00,22:00,True,True,2.4,Active
+ST043,Electronics_043,Electronics,Central,13.024159,80.298715,41560,759,09:00,21:00,False,False,0.65,Active
+ST044,ConvenienceStore_044,Convenience Store,East,13.033281,80.27501,8485,162,10:00,23:00,True,True,0.94,Active
+ST045,Fashion_045,Fashion,Suburban South,13.032001,80.257171,36308,609,09:00,23:00,False,True,1.69,Active
+ST046,DiscountRetail_046,Discount Retail,Suburban South,13.043327,80.239779,43289,1247,09:00,21:00,False,False,2.06,Active
+ST047,Fashion_047,Fashion,West,13.041104,80.246868,36899,1326,09:00,21:00,True,True,0.8,Active
+ST048,ConvenienceStore_048,Convenience Store,Suburban North,13.049779,80.257274,5580,173,10:00,20:00,False,False,1.34,Active
+ST049,Supermarket_049,Supermarket,Urban Core,13.046875,80.251199,28960,660,10:00,21:00,False,True,1.97,Active
+ST050,ShoppingMall_050,Shopping Mall,Suburban North,13.063708,80.251109,45335,929,08:00,23:00,True,True,1.31,Active
+ST051,ConvenienceStore_051,Convenience Store,Residential Zone,13.070795,80.222168,43623,1090,08:00,20:00,False,False,2.23,Active
+ST052,Home&Living_052,Home & Living,East,13.060923,80.247,26346,758,09:00,22:00,True,False,2.4,Active
+ST053,Supermarket_053,Supermarket,Commercial District,13.024688,80.296154,16194,339,10:00,20:00,True,True,2.06,Active
+ST054,Grocery_054,Grocery,Central,13.07592,80.239084,32535,671,08:00,23:00,False,False,1.63,Active
+ST055,Electronics_055,Electronics,Residential Zone,13.074652,80.279834,9006,172,09:00,20:00,True,False,0.83,Active
+ST056,Sports&Lifestyle_056,Sports & Lifestyle,Transit Zone,13.101722,80.250025,48359,1513,10:00,21:00,True,False,1.68,Active
+ST057,Sports&Lifestyle_057,Sports & Lifestyle,North,13.09166,80.265275,4191,112,09:00,20:00,False,True,1.36,Active
+ST058,ConvenienceStore_058,Convenience Store,Suburban South,13.029498,80.296863,43153,767,08:00,23:00,True,False,1.42,Active
+ST059,Sports&Lifestyle_059,Sports & Lifestyle,Commercial District,13.089718,80.25719,49408,1080,08:00,20:00,False,False,1.14,Active
+ST060,Grocery_060,Grocery,Suburban South,13.071286,80.273455,23546,905,08:00,23:00,True,False,2.2,Active
+ST061,ShoppingMall_061,Shopping Mall,Urban Core,13.045169,80.267692,19605,441,08:00,20:00,True,False,1.53,Active
+ST062,DiscountRetail_062,Discount Retail,Commercial District,13.088235,80.275249,43829,878,08:00,20:00,False,True,1.4,Active
+ST063,ConvenienceStore_063,Convenience Store,East,13.047559,80.266524,32515,732,10:00,22:00,False,False,1.19,Active
+ST064,ShoppingMall_064,Shopping Mall,West,13.042626,80.229652,14121,391,10:00,21:00,True,True,1.99,Active
+ST065,DiscountRetail_065,Discount Retail,West,13.085213,80.298129,35882,781,08:00,22:00,True,False,2.46,Active
+ST066,Electronics_066,Electronics,West,13.021273,80.262731,19477,732,09:00,21:00,False,True,0.61,Active
+ST067,Supermarket_067,Supermarket,Residential Zone,13.045591,80.258297,23828,757,09:00,20:00,True,False,0.6,Active
+ST068,DiscountRetail_068,Discount Retail,North,13.071932,80.274916,11443,378,09:00,20:00,True,True,1.63,Active
+ST069,Pharmacy_069,Pharmacy,Suburban North,13.074569,80.283259,16290,312,09:00,22:00,False,False,1.26,Active
+ST070,Sports&Lifestyle_070,Sports & Lifestyle,Residential Zone,13.025421,80.296809,8003,137,08:00,22:00,True,True,0.92,Active
+ST071,Grocery_071,Grocery,South,13.069679,80.232523,28272,693,09:00,20:00,True,False,1.69,Active
+ST072,ShoppingMall_072,Shopping Mall,Suburban South,13.026406,80.238674,18837,358,10:00,21:00,False,True,1.75,Active
+ST073,Pharmacy_073,Pharmacy,East,13.078287,80.292673,10821,393,09:00,22:00,False,True,0.83,Active
+ST074,DiscountRetail_074,Discount Retail,West,13.082976,80.295414,34298,781,10:00,20:00,False,False,1.38,Active
+ST075,Sports&Lifestyle_075,Sports & Lifestyle,West,13.022328,80.238314,45690,842,08:00,22:00,True,True,1.65,Active
+ST076,DiscountRetail_076,Discount Retail,Commercial District,13.078636,80.293286,13394,223,09:00,20:00,False,False,1.37,Active
+ST077,ConvenienceStore_077,Convenience Store,Urban Core,13.048895,80.228368,12039,329,09:00,23:00,True,False,1.89,Active
+ST078,Fashion_078,Fashion,Urban Core,13.042716,80.229274,27988,506,08:00,23:00,False,True,2.15,Active
+ST079,Grocery_079,Grocery,Commercial District,13.05256,80.280515,42486,1049,09:00,21:00,False,False,0.6,Active
+ST080,DiscountRetail_080,Discount Retail,North,13.022598,80.270402,17182,344,08:00,23:00,True,True,1.12,Active
+ST081,Fashion_081,Fashion,Suburban South,13.105235,80.271817,11590,273,10:00,22:00,False,False,1.93,Active
+ST082,DiscountRetail_082,Discount Retail,East,13.061111,80.231571,13991,244,08:00,20:00,False,False,1.52,Active
+ST083,Home&Living_083,Home & Living,Commercial District,13.044046,80.220205,49082,1384,10:00,23:00,True,False,1.67,Active
+ST084,Pharmacy_084,Pharmacy,Suburban South,13.051061,80.264153,37114,971,08:00,21:00,False,True,2.37,Active
+ST085,ConvenienceStore_085,Convenience Store,Central,13.048636,80.257838,26484,687,10:00,21:00,False,True,1.83,Active
+ST086,Electronics_086,Electronics,Commercial District,13.106882,80.24656,8077,145,10:00,23:00,True,True,1.38,Active
+ST087,ConvenienceStore_087,Convenience Store,Transit Zone,13.107296,80.225986,18868,512,10:00,20:00,False,False,1.89,Active
+ST088,Home&Living_088,Home & Living,Transit Zone,13.084685,80.280752,36956,1407,10:00,22:00,True,True,0.64,Active
+ST089,ConvenienceStore_089,Convenience Store,North,13.088433,80.276311,8086,199,08:00,20:00,False,True,1.89,Active
+ST090,ShoppingMall_090,Shopping Mall,Urban Core,13.053736,80.231646,36310,921,08:00,21:00,True,True,1.86,Active
+ST091,Sports&Lifestyle_091,Sports & Lifestyle,Suburban North,13.075774,80.239266,39717,1323,09:00,23:00,False,True,1.42,Active
+ST092,DiscountRetail_092,Discount Retail,West,13.080985,80.232638,30449,524,09:00,23:00,False,False,2.48,Active
+ST093,ShoppingMall_093,Shopping Mall,East,13.109944,80.288267,8489,254,10:00,22:00,False,True,1.64,Active
+ST094,ConvenienceStore_094,Convenience Store,West,13.020729,80.289205,4714,82,09:00,21:00,False,True,1.99,Active
+ST095,Grocery_095,Grocery,Residential Zone,13.042556,80.280446,44700,915,08:00,20:00,False,False,0.77,Active
+ST096,Supermarket_096,Supermarket,Residential Zone,13.052838,80.230513,20840,571,08:00,21:00,False,False,1.33,Active
+ST097,Electronics_097,Electronics,West,13.102264,80.295535,20842,407,08:00,23:00,True,True,1.18,Active
+ST098,Grocery_098,Grocery,Transit Zone,13.08518,80.298395,38024,1005,08:00,22:00,True,False,2.08,Active
+ST099,Home&Living_099,Home & Living,Transit Zone,13.087411,80.240973,26470,492,08:00,21:00,False,True,2.38,Active
+ST100,Sports&Lifestyle_100,Sports & Lifestyle,Commercial District,13.049521,80.268807,43944,1614,10:00,22:00,False,True,2.15,Active

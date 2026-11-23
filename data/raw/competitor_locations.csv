@@ -1,0 +1,61 @@
+Competitor_ID,Competitor_Name,Competitor_Category,District,Latitude,Longitude,Estimated_Size_SqFt,Price_Segment,Parking_Available
+COMP001,Competitor_001,Electronics,Central,13.105164,80.244349,33284,Budget,True
+COMP002,Competitor_002,Grocery,Commercial District,13.03221,80.256292,36402,Mid-Range,True
+COMP003,Competitor_003,Convenience Store,Transit Zone,13.028912,80.259148,27746,Mid-Range,True
+COMP004,Competitor_004,Home & Living,East,13.059904,80.296044,24768,Budget,False
+COMP005,Competitor_005,Home & Living,Central,13.055833,80.235185,9005,Mid-Range,True
+COMP006,Competitor_006,Grocery,Transit Zone,13.077554,80.297687,4314,Mid-Range,True
+COMP007,Competitor_007,Electronics,Residential Zone,13.038469,80.286385,37320,Budget,True
+COMP008,Competitor_008,Grocery,Urban Core,13.089693,80.283092,1185,Mid-Range,True
+COMP009,Competitor_009,Electronics,Commercial District,13.042559,80.23396,2689,Budget,True
+COMP010,Competitor_010,Home & Living,East,13.072997,80.221262,18391,Budget,True
+COMP011,Competitor_011,Convenience Store,Commercial District,13.030228,80.225085,30378,Mid-Range,True
+COMP012,Competitor_012,Discount Retail,Commercial District,13.039939,80.269209,35173,Mid-Range,False
+COMP013,Competitor_013,Supermarket,Central,13.109873,80.287784,28936,Premium,True
+COMP014,Competitor_014,Discount Retail,Suburban South,13.026614,80.226463,10721,Budget,True
+COMP015,Competitor_015,Shopping Mall,Residential Zone,13.076977,80.263869,22311,Mid-Range,False
+COMP016,Competitor_016,Discount Retail,Commercial District,13.074488,80.227934,8498,Premium,True
+COMP017,Competitor_017,Convenience Store,Suburban South,13.099928,80.253105,30720,Mid-Range,False
+COMP018,Competitor_018,Fashion,Urban Core,13.058409,80.273209,25530,Budget,False
+COMP019,Competitor_019,Fashion,North,13.094859,80.227458,7328,Premium,False
+COMP020,Competitor_020,Electronics,Commercial District,13.025398,80.29653,37810,Mid-Range,True
+COMP021,Competitor_021,Convenience Store,Urban Core,13.098625,80.29529,28717,Premium,True
+COMP022,Competitor_022,Shopping Mall,Residential Zone,13.04812,80.228288,34253,Budget,True
+COMP023,Competitor_023,Discount Retail,East,13.096255,80.248009,37455,Mid-Range,True
+COMP024,Competitor_024,Shopping Mall,Residential Zone,13.040354,80.254329,37763,Premium,True
+COMP025,Competitor_025,Shopping Mall,Central,13.036237,80.276216,21249,Mid-Range,False
+COMP026,Competitor_026,Supermarket,South,13.098288,80.265306,27265,Budget,True
+COMP027,Competitor_027,Supermarket,North,13.08715,80.237211,28514,Mid-Range,False
+COMP028,Competitor_028,Electronics,Urban Core,13.048047,80.245951,38197,Premium,True
+COMP029,Competitor_029,Supermarket,South,13.034167,80.269427,6346,Mid-Range,False
+COMP030,Competitor_030,Convenience Store,Suburban South,13.074637,80.253135,15127,Premium,True
+COMP031,Competitor_031,Home & Living,Suburban North,13.02998,80.274257,39871,Mid-Range,False
+COMP032,Competitor_032,Supermarket,East,13.055574,80.267946,1503,Budget,False
+COMP033,Competitor_033,Grocery,South,13.088774,80.243156,8863,Budget,False
+COMP034,Competitor_034,Convenience Store,South,13.031627,80.262607,16080,Premium,False
+COMP035,Competitor_035,Fashion,Suburban North,13.097559,80.223384,2228,Mid-Range,True
+COMP036,Competitor_036,Home & Living,Residential Zone,13.058636,80.252354,28373,Mid-Range,True
+COMP037,Competitor_037,Convenience Store,Central,13.106958,80.23375,31152,Premium,False
+COMP038,Competitor_038,Fashion,Suburban North,13.096004,80.239465,39592,Mid-Range,True
+COMP039,Competitor_039,Convenience Store,West,13.087122,80.237726,12018,Budget,True
+COMP040,Competitor_040,Grocery,Urban Core,13.051599,80.296658,10679,Budget,True
+COMP041,Competitor_041,Electronics,West,13.037754,80.268192,5938,Budget,False
+COMP042,Competitor_042,Discount Retail,Residential Zone,13.088389,80.255912,37994,Premium,False
+COMP043,Competitor_043,Home & Living,South,13.059579,80.257514,20845,Mid-Range,True
+COMP044,Competitor_044,Home & Living,Commercial District,13.026677,80.256939,3464,Budget,False
+COMP045,Competitor_045,Shopping Mall,North,13.07802,80.298189,6917,Premium,False
+COMP046,Competitor_046,Discount Retail,Residential Zone,13.069888,80.283345,3688,Mid-Range,True
+COMP047,Competitor_047,Home & Living,Residential Zone,13.062807,80.232069,5054,Mid-Range,True
+COMP048,Competitor_048,Home & Living,North,13.065409,80.233805,17236,Premium,False
+COMP049,Competitor_049,Discount Retail,Commercial District,13.067047,80.2327,25435,Mid-Range,False
+COMP050,Competitor_050,Convenience Store,Urban Core,13.081101,80.224189,22931,Budget,False
+COMP051,Competitor_051,Fashion,Commercial District,13.081054,80.242732,10854,Mid-Range,True
+COMP052,Competitor_052,Electronics,Urban Core,13.047921,80.272484,26687,Budget,True
+COMP053,Competitor_053,Shopping Mall,Commercial District,13.053901,80.283333,9375,Premium,True
+COMP054,Competitor_054,Convenience Store,Commercial District,13.052565,80.249008,12813,Budget,False
+COMP055,Competitor_055,Discount Retail,East,13.040389,80.231005,6057,Mid-Range,True
+COMP056,Competitor_056,Supermarket,Transit Zone,13.050309,80.281305,9588,Premium,False
+COMP057,Competitor_057,Electronics,South,13.036276,80.275428,11848,Premium,False
+COMP058,Competitor_058,Supermarket,Suburban North,13.052787,80.277567,30111,Premium,False
+COMP059,Competitor_059,Discount Retail,East,13.068061,80.244757,31737,Budget,False
+COMP060,Competitor_060,Discount Retail,Suburban South,13.089249,80.28225,33958,Premium,False

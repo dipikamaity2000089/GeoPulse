@@ -1,35 +1,16 @@
-# GeoPulse | Retail Mobility Analytics
+# React + Vite
 
-> Turning location data into smarter retail decisions.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## About
-GeoPulse is a retail location intelligence project that explores footfall patterns, visitor mobility, store proximity, and competitive landscapes using synthetic GPS data. It combines data analytics and geospatial techniques to uncover retail insights and evaluate location potential.
+Currently, two official plugins are available:
 
-## Core Analytics
-- **Footfall Intelligence** — Store visits, hourly trends, and weekday/weekend patterns.
-- **Mobility Analysis** — Visitor transitions, journey sequences, and repeat visits.
-- **Spatial Intelligence** — Store density, geographic distances, and competitor proximity.
-- **Cannibalization Analysis** — Visitor overlap between nearby stores.
-- **Location Scoring** — Weighted ranking of stores using multiple business indicators.
-- **Data Quality** — Dataset integrity, consistency, and validation checks.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Tech Stack
-`Python` · `Pandas` · `NumPy` · `React` · `Vite` · `Recharts`
+## React Compiler
 
-## Synthetic Dataset
-| Metric | Scale |
-|---|---:|
-| Devices | 5,000 |
-| Stores | 100 |
-| Competitors | 60 |
-| Simulation period | 90 days |
-| Store visits | 73,662 |
-| GPS pings | 826,842 |
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Location Scoring
-Store performance is evaluated using footfall, competitor exposure, store density, mobility, and accessibility through a weighted scoring model.
+## Expanding the ESLint configuration
 
-## Roadmap
-- Interactive 2D/3D footfall visualization
-- Mobility pattern dashboards
-- Location simulation and what-if analysis
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

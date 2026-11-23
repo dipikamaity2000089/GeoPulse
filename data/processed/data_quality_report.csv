@@ -1,0 +1,25 @@
+Dataset,Check,Status,Details
+stores,Required columns,PASS,All required columns present
+competitors,Required columns,PASS,All required columns present
+visits,Required columns,PASS,All required columns present
+pings,Required columns,PASS,All required columns present
+stores,Missing values,PASS,Total missing: 0 | Expected: 0 | Unexpected: 0
+competitors,Missing values,PASS,Total missing: 0 | Expected: 0 | Unexpected: 0
+visits,Missing values,INFO,Total missing: 15000 | Expected: 15000 | Unexpected: 0
+pings,Missing values,PASS,Total missing: 0 | Expected: 0 | Unexpected: 0
+stores,Duplicate Store_ID,PASS,Duplicate count: 0
+competitors,Duplicate Competitor_ID,PASS,Duplicate count: 0
+visits,Duplicate Visit_ID,PASS,Duplicate count: 0
+pings,Duplicate Ping_ID,PASS,Duplicate count: 0
+stores,Coordinate validity,PASS,Invalid coordinates: 0
+competitors,Coordinate validity,PASS,Invalid coordinates: 0
+pings,Coordinate validity,PASS,Invalid coordinates: 0
+Relationships,Visits → Stores,PASS,Unmatched records: 0
+Relationships,GPS Pings → Stores,PASS,Unmatched records: 0
+Relationships,GPS Pings → Visits,PASS,Unmatched records: 0
+visits,Arrival / Departure order,PASS,Departure before arrival: 0
+visits,Timestamp validity,PASS,Invalid timestamps: 0
+visits,Dwell time consistency,PASS,Duration mismatches: 0
+pings,Timestamp validity,PASS,Invalid timestamps: 0
+Coverage,Unique devices,PASS,"Devices in visits: 5000, devices in pings: 5000"
+Coverage,Store visit coverage,PASS,"Visited stores: 100/100, stores without visits: 0"
