@@ -1,0 +1,5 @@
+Candidate_Zone,Latitude,Longitude,GPS_Activity,Nearest_Store_Distance,Cannibalization_Risk,Opportunity_Score,Rank,Recommendation
+Zone 3,22.576,88.367,174,0.004601086828132645,High,123.1803260484398,1,Best Expansion Location
+Zone 2,22.576,88.368,140,0.005326349594229167,Medium,99.59790487826875,2,Potential Location
+Zone 1,22.577,88.367,138,0.005382378656321463,Medium,98.21471359689643,3,Low Priority
+Zone 4,22.577,88.368,120,0.006014149981498161,Medium,85.80424499444945,4,Low Priority
