@@ -1,0 +1,5 @@
+Candidate_Zone,Latitude,Longitude,GPS_Activity,Nearest_Store_Distance,Cannibalization_Risk,Opportunity_Score,Rank,Recommendation,Estimated_Monthly_Visitors,Estimated_Customers,Monthly_Revenue,Gross_Profit,Monthly_Net_Profit,Monthly_ROI_Percent,Payback_Period_Months,Financial_Recommendation
+Zone 3,22.576,88.367,174,0.0046010868281326,High,123.1803260484398,1,Best Expansion Location,1740,261.0,78300.0,27405.0,-32595.0,-6.519,inf,Not Recommended
+Zone 2,22.576,88.368,140,0.0053263495942291,Medium,99.59790487826876,2,Potential Location,1400,210.0,63000.0,22050.0,-37950.0,-7.59,inf,Not Recommended
+Zone 1,22.577,88.367,138,0.0053823786563214,Medium,98.21471359689644,3,Low Priority,1380,207.0,62100.0,21735.0,-38265.0,-7.6530000000000005,inf,Not Recommended
+Zone 4,22.577,88.368,120,0.0060141499814981,Medium,85.80424499444945,4,Low Priority,1200,180.0,54000.0,18900.0,-41100.0,-8.219999999999999,inf,Not Recommended
